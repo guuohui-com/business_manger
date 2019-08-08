@@ -12,6 +12,8 @@
 
     <!--头文件中加入mvc三行，打开命名空间-->
 
+
+
     <!--<mvc:annotation-driven />-->
     <context:component-scan base-package="com.neuedu"></context:component-scan>
 
@@ -24,12 +26,14 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--<mvc:interceptors>
+    <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/login"/>
+            <mvc:mapping path="/loginsuccess"/>
             <bean class="com.neuedu.Interceptor.interceptors"></bean>
         </mvc:interceptor>
-    </mvc:interceptors>-->
+    </mvc:interceptors>
+
+
 
     <!-- 文件上传视图解析器 -->
     <bean id="multipartResolver"

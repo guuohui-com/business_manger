@@ -1,6 +1,8 @@
 package com.neuedu.dao;
 
 import com.neuedu.pojo.Cart;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface CartMapper {
@@ -42,5 +44,5 @@ public interface CartMapper {
      *
      * @mbggenerated
      */
-    int updateByPrimaryKey(Cart record);
+    int updateByPrimaryKey(@Param("category") Cart record);
 }
